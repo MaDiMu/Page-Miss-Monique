@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200;1,300&family=Rubik:ital,wght@0,300;1,400&display=swap');
+/*font-family: 'Roboto Mono', monospace;
+font-family: 'Rubik', sans-serif;*/
+/* estilo index */
+
+/*html{font-size: 62.5%;}
+/* principal */
+a {text-decoration: none;}
+body header a img { 
+    background-position: top left;
+    width: 15%}
+
+ul {list-style-type: none;}
+.banner {
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    max-width: 300px;
+    margin-left: 650px;
+}
+/* Inicio Store */
+main section article img {
+    max-height: 400px;
+}
+.tshirt1{background-position: left;}
+.tshirt2{background-position: center;}
+nav ul li a {color: black;}
+
+/* TOUR */
+.tour{width: 60% ;}
+ol a {color: black;}
+/* Footer */
+footer ul li a {color: black;}
+.copyright{color: darkgray;
+}
+footer p {text-align: center;
+font-family: 'Rubik', sans-serif;}
