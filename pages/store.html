@@ -3,91 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store Miss Monique</title>
+    <title>Miss Monique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="miss-monique-icon" href="../img/miss-monique-favicom.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/miss-monique-favicom.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../img/logo-miss-monique-1.webp" alt="logo-miss-monique-1">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./tour.html">Tour</a>
+    <header class="encabezado">
+        <nav >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-miss-monique-1.webp" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+              </a>
+            </div>
+        </nav>
+        <nav class="items-list ">
+            <ul class="nav flex-column ">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./tour.html">Tour</a>
                 </li>
-                <li>
-                    <a href="./music.html">Music</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./music.html">Music</a>
                 </li>
-                <li>
-                    <a href="./video.html">Video</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./video.html">Video</a>
                 </li>
-                <li>
-                    <a href="./store.html">Store</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./store.html">Store</a>
                 </li>
-                <li>
-                    <a href="./signup.html">Sign up</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./signup.html">Sign Up</a>
                 </li>
-            </ul>
+                
+              </ul>
+            
         </nav>
     </header>
-
     <main>
-        <section>
-            <h4>store</h4>
-            <article>
-                <img src="../img/T-shirt-1.jpeg" class="tshirt1" alt="T-shirt1-missmonique">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, eaque.</p>
-            </article>
-            <article>
-                <img src="../img/T-SHIRT-2.jpeg" class="tshirt2" alt="T-shirt2-missmonique">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa.</p>
-            </article>
-            <article>
-                <img src="../img/T-shirt-3.jpeg" alt="T-shirt3-missmonique">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa.</p>
-            </article>
-            <article>
-                <img src="../img/sweatsuit-1.jpeg" alt="sweatsuit1-missmonique">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa.</p>
-            </article>
-            <article>
-                <img src="../img/sweatsuit-3.jpeg" alt="sweatsuit3-missmonique">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa.</p>
-            </article>
-            <article>
-                <img src="../img/Cap-1.jpeg" alt="Cap1-missmonique">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa.</p>
-            </article>
-            <article>
-                <img src="../img/CAP-2.jpeg" alt="cap2-missmonique">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa.</p>
-            </article>
-            <article>
-                <img src="../img/HAT-1.jpeg" alt="Hat1--missmonique">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa.</p>
-            </article>
-        </section>
+
+        <div class="card-group">
+            <div class="card">
+              <img src="../img/T-shirt-1.jpeg" class="card-img-top" alt="T-shirt1-missmonique">
+              <div class="card-body">
+                <h5 class="card-title">T-shirt Miss Monique Face</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <span class="art-price">50.00$</span>
+                <button class="button-price">BUY</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/T-SHIRT-2.jpeg" class="card-img-top" alt="T-shirt2-missmonique">
+              <div class="card-body">
+                <h5 class="card-title">T-shirt Miss Monique green and black</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <span class="art-price">50.00$</span>
+                <button class="button-price">BUY</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/T-shirt-3.jpeg" class="card-img-top" alt="T-shirt3-missmonique">
+              <div class="card-body">
+                <h5 class="card-title">T-shirt Miss Monique black</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                <span class="art-price">50.00$</span>
+                <button class="button-price">BUY</button>
+              </div>
+            </div>
+            <div class="card">
+                <img src="../img/sweatsuit-1.jpeg" class="card-img-top" alt="sweatsuit-MissMonique">
+                <div class="card-body">
+                  <h5 class="card-title">Sweatsuit Miss Monique black</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                  <span class="art-price">50.00$</span>
+                  <button class="button-price">BUY</button>
+                </div>
+            </div>
+            
+            <div class="card-group">
+                <div class="card">
+                  <img src="../img/sweatsuit-3.jpeg" class="card-img-top" alt="Sweatsuit-MissMonique">
+                  <div class="card-body">
+                    <h5 class="card-title">Sweatsuit Miss Monique Face</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <span class="art-price">50.00$</span>
+                    <button class="button-price">BUY</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="../img/Cap-1.jpeg" class="card-img-top" alt="Cap-Missmonique">
+                  <div class="card-body">
+                    <h5 class="card-title">Cap Miss Monique green and black</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <span class="art-price">50.00$</span>
+                    <button class="button-price">BUY</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="../img/CAP-2.jpeg" class="card-img-top" alt="Cap2-missmonique">
+                  <div class="card-body">
+                    <h5 class="card-title">Cap Miss Monique black and white</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                    <span class="art-price">50.00$</span>
+                    <button class="button-price">BUY</button>
+                  </div>
+                </div>
+                <div class="card">
+                    <img src="../img/HAT-1.jpeg" class="card-img-top" alt="Hat-MissMonique">
+                    <div class="card-body">
+                      <h5 class="card-title">Hat Miss Monique black</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                      <span class="art-price">50.00$</span>
+                      <button class="button-price">BUY</button>
+                    </div>
+                </div>
+          </div>
     </main>
 
-    <hr>
-    <footer>
+    
+    <footer class="footer">
         <p class="copyright">
             Copyright todos los derechos reservados
         </p>
-        <div class="Redes">
-            <li>
-                <a href="">instagram</a>
-            </li>
-            <li>
-                <a href="">soundcloud</a>
-                <i class="fa-brands fa-soundcloud"></i>
-            </li>
-            <li>
-                <a href="">TikTok</a>
-            </li>
+        <div class="redes">
+            
+                <a class="instagram" href="" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            
+            
+                <a class="soundcloud" href="" target="_blank" >
+                    <i class="fa-brands fa-soundcloud"></i>
+                </a>
+            
+            
+                <a class="TikTok" href="" target="_blank" >
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/43b0bd374d.js" crossorigin="anonymous"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
     
 </body>
 </html>

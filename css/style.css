@@ -2,29 +2,110 @@
 /*font-family: 'Roboto Mono', monospace;
 font-family: 'Rubik', sans-serif;*/
 /* estilo index */
+/* reset de size */
 
-/*html{font-size: 62.5%;}
+html{font-size: 62.5%;}
+
+/* reset de html border */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* principal */
+.encabezado {
+        display: flex;
+        flex-direction: column;}
+.carousele{justify-content: center;
+        align-items:center }
+
+
+
+.list { 
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 0.5rem;}
+
+.nav-item a {
+        font-size: 1.5rem;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        border-bottom: 1px solid white;
+        transition: all 0.5s ease;
+        justify-content: center;
+    }
+
+
+.nav-item a:hover {border-color: aquamarine;}
+
+.banner {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        justify-content: center;}
+
 a {text-decoration: none;}
-body header a img { 
-    background-position: top left;
-    width: 15%}
+
 
 ul {list-style-type: none;}
-.banner {
+/*.banner {
     background-position: center;
     background-size: contain;
     width: 60%;
     max-width: 300px;
     margin-left: 650px;
-}
+} */
+/*img{ width: 100%;}*/
+
+
+
+
 /* Inicio Store */
-main section article img {
-    max-height: 400px;
+
+.articles{  
+            display: flex;
+            max-width: 120px;
+            justify-content: center;
+            margin: 3rem auto;
+            flex-direction: row;
+            }
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1 1 clamp(min,prefer,max);
+    padding: 1.5rem;
+    width: 100rem;
 }
-.tshirt1{background-position: left;}
+.art-price{
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+.button-price{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;}
+
+
+
+
+
+
+/*main section article img {
+    max-height: 400px;
+}*/
+/*.tshirt1{background-position: left;}
 .tshirt2{background-position: center;}
-nav ul li a {color: black;}
+nav ul li a {color: black;}*/
 
 /* TOUR */
 .tour{width: 60% ;}
@@ -35,3 +116,35 @@ footer ul li a {color: black;}
 }
 footer p {text-align: center;
 font-family: 'Rubik', sans-serif;}
+
+/* footer */
+.footer{
+        margin-top: 6rem;
+        border-top: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.copyright{
+    background-position: top;
+    background-color: white;
+    width: 100%;
+}
+
+i {font-size: 3rem;}
+
+.redes{ display: flex;
+        gap: 3rem;
+        align-items: center;}
+
+.instagram {
+    padding: 1.5rem;
+   color: #E1306C;}
+
+
+.tiktok{
+        padding: 1.5rem;
+        color: #29ABE2;
+}
+.soundcloud{ color: #FF8800;}
