@@ -50,14 +50,7 @@ a {text-decoration: none;}
 
 
 ul {list-style-type: none;}
-/*.banner {
-    background-position: center;
-    background-size: contain;
-    width: 60%;
-    max-width: 300px;
-    margin-left: 650px;
-} */
-/*img{ width: 100%;}*/
+
 
 
 
@@ -98,18 +91,138 @@ ul {list-style-type: none;}
 
 
 
-
-
-/*main section article img {
-    max-height: 400px;
-}*/
-/*.tshirt1{background-position: left;}
-.tshirt2{background-position: center;}
-nav ul li a {color: black;}*/
-
 /* TOUR */
-.tour{width: 60% ;}
 ol a {color: black;}
+
+.banner-tour{
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;}
+
+.banner-tour-img{
+        display: flex;
+        max-width: 600px;}
+
+.tour{
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        background-color: rgb(0, 124, 0);}
+
+.tour-card{
+        display: flex;
+        padding: 2rem;
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;}
+
+.tour-map{padding: 1.5rem;}
+
+.tour-card-title{
+        font-family: 'Rubik', sans-serif;
+        font-weight: bold;
+        padding: 1rem;
+        
+}
+.tour-card-link{
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        border-radius: 30%;}
+
+ /* Music */
+ .music{
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;}
+        
+.music-img-1{
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+}
+ .music-tittle{
+        display: flex;
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;}
+
+ .music-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        color: grey;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;}
+
+.music-img{display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        }
+/* video */
+.video{ display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;}
+.video-img{
+        display: flex;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        max-width: 70%;
+        margin: auto;
+}
+.video-p{
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+
+/* signup */
+.signup{display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+
+}
+.signup-img{display: flex;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        max-width: 70%;
+        margin: auto;}
 /* Footer */
 footer ul li a {color: black;}
 .copyright{color: darkgray;
