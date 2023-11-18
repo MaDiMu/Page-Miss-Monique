@@ -28,7 +28,7 @@ html{font-size: 62.5%;}
         gap: 2rem;
         font-size: 0.5rem;}
 
-.nav-item a {
+.nav-items a {
         font-size: 1.5rem;
         font-family: 'Roboto Mono', monospace;
         font-weight: bold;
@@ -38,7 +38,7 @@ html{font-size: 62.5%;}
     }
 
 
-.nav-item a:hover {border-color: aquamarine;}
+.nav-items a:hover {border-color: aquamarine;}
 
 .banner {
         max-width: 1200px;
@@ -57,7 +57,7 @@ ul {list-style-type: none;}
 
 /* Inicio Store */
 
-.articles{  
+/*.articles{  
             display: flex;
             max-width: 120px;
             justify-content: center;
@@ -73,7 +73,7 @@ ul {list-style-type: none;}
     flex: 1 1 clamp(min,prefer,max);
     padding: 1.5rem;
     width: 100rem;
-}
+}*/
 .art-price{
         font-size: 1.5rem;
         font-weight: bold;
@@ -224,9 +224,9 @@ ol a {color: black;}
         max-width: 70%;
         margin: auto;}
 /* Footer */
-footer ul li a {color: black;}
+/*footer ul li a {color: black;}
 .copyright{color: darkgray;
-}
+}*/
 footer p {text-align: center;
 font-family: 'Rubik', sans-serif;}
 
@@ -240,6 +240,7 @@ font-family: 'Rubik', sans-serif;}
 }
 
 .copyright{
+    color: darkgray;    
     background-position: top;
     background-color: white;
     width: 100%;

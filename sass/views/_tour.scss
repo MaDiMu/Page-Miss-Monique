@@ -1,0 +1,16 @@
+ol{a{color: black;}}
+.banner-tour{@include music(center,1.5rem,100%,center,auto,center);
+            &-img{display: flex;
+                    max-width: 600px;}}
+.tour{@include music(center,2rem,100%,center,null,center);
+        background-color:rgb(0,124,0);
+    &-card{@include music(center,2rem,null,center,auto,center);
+                flex-direction: column;
+        &-tittle{font-family: 'Rubik', sans-serif;
+                font-weight: bold;
+                padding: 1rem;}
+        &-link{color: white;
+                background-color: black;
+                padding: 1rem;
+                border-radius: 30%;}}
+    &-map{padding: 1.5rem;}}

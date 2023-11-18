@@ -1,0 +1,20 @@
+footer{
+    p{ text-align: center;
+    font-family: 'Rubik', sans-serif;}
+};
+.footer{
+    margin-top: 6rem;
+    border-top: 2px solid black;
+    @include flex(null, center, column,null);
+    .copyright{
+        color: darkgray;
+        background-color: white;
+        background-position: top;
+        @include size(100%,null);
+    };};
+    .redes{@include flex(null, center, null, 3rem);
+        .instagram{@include redes(1.5rem,#E1306C )}
+        .tiktok{@include redes(1.5rem,#29ABE2)}
+        .soundcloud{@include redes(null,#FF8800)}
+    };
+i{font-size: $font-XXL;}

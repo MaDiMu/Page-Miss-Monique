@@ -1,0 +1,9 @@
+.music .music-img-1 { @include music(center,1.5rem,100%,center,auto,center);
+        }
+.music-tittle{@include music(center,2rem,100%,center,null,center)};
+
+.music-text{@include music(center, 0.5rem,null,null,null,center);
+                color:grey;
+                font-family: 'Rubik', sans-serif;
+                font-size: $font-medium;};
+.music-img{@include music(center, 1.5rem,70%,center,auto,center);}

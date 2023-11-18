@@ -1,0 +1,32 @@
+@mixin flex($justify, $align, $direction, $gap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+};
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+};
+
+@mixin flex-more($max-width, $margin,$padding, $justify){
+    max-width: $max-width;
+    margin: $margin;
+    padding: $padding;
+    justify-content: $justify;
+};
+@mixin redes($padding,$color){
+    padding: $padding;
+    color: $color;
+};
+@mixin music($align,$padding,$max,$text,$margin,$justify){
+    display: flex;
+    align-items: $align;
+    padding: $padding;
+    max-width: $max;
+    text-align: $text;
+    margin: $margin;
+    justify-content: $justify;  
+};

@@ -1,0 +1,30 @@
+.encabezado{@include flex( flex-start, flex-start,column, null);
+        padding: 10px;};
+.encabezado-fluid{@include flex(center,center,null,null);
+    &-a{display: flex;};}
+
+
+.carousele{@include flex(center, center, null, null)};
+
+.list{@include flex(null, null, column, 2rem);
+        font-size: $font-xsmall;};
+.nav{display: flex;}
+.nav-items{
+        font-size: $font-medium;
+        font-family:'Roboto Mono', monospace;
+        font-weight: bold;
+        border-bottom: 1px solid white;
+        transition: all 0.5s ease;
+        justify-content: center;
+        text-decoration: none;
+        color:black;
+        margin-right: 5px;
+        
+};
+.nav-items:hover{ border-color: aquamarine;};
+
+.banner{@include flex-more(1200px,2rem auto, 1rem, center)};
+
+
+
+
