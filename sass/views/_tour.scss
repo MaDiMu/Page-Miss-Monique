@@ -1,9 +1,9 @@
-ol{a{color: black;}}
+ol{a{color: rgb(232, 221, 221);}}
 .banner-tour{@include music(center,1.5rem,100%,center,auto,center);
             &-img{display: flex;
                     max-width: 600px;}}
 .tour{@include music(center,2rem,100%,center,null,center);
-        background-color:rgb(0,124,0);
+        color: rgb(206, 195, 195);
     &-card{@include music(center,2rem,null,center,auto,center);
                 flex-direction: column;
         &-tittle{font-family: 'Rubik', sans-serif;
@@ -11,6 +11,6 @@ ol{a{color: black;}}
                 padding: 1rem;}
         &-link{color: white;
                 background-color: black;
-                padding: 1rem;
+                padding: 0.5rem;
                 border-radius: 30%;}}
     &-map{padding: 1.5rem;}}

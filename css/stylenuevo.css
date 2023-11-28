@@ -41,6 +41,12 @@ a {
   gap: 2rem;
   font-size: 0.5rem; }
 
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
 .nav {
   display: flex; }
 
@@ -100,7 +106,7 @@ a {
   justify-content: center; }
 
 ol a {
-  color: black; }
+  color: #e8dddd; }
 
 .banner-tour {
   display: flex;
@@ -121,7 +127,7 @@ ol a {
   max-width: 100%;
   text-align: center;
   justify-content: center;
-  background-color: #007c00; }
+  color: #cec3c3; }
   .tour-card {
     display: flex;
     align-items: center;
@@ -137,7 +143,7 @@ ol a {
     .tour-card-link {
       color: white;
       background-color: black;
-      padding: 1rem;
+      padding: 0.5rem;
       border-radius: 30%; }
   .tour-map {
     padding: 1.5rem; }
@@ -169,14 +175,15 @@ footer p {
   align-items: center;
   flex-direction: column; }
   .footer .copyright {
-    color: darkgray;
-    background-color: white;
+    color: white;
+    background-color: black;
     background-position: top;
     width: 100%; }
 
 .redes {
   display: flex;
   align-items: center;
+  flex-direction: center;
   gap: 3rem; }
   .redes .instagram {
     padding: 1.5rem;
@@ -219,10 +226,13 @@ i {
 .button-price {
   border: none;
   background-color: black;
-  color: white;
-  padding: 1rem 2rem;
+  color: #ffffff;
+  padding: 0.5rem;
   font-weight: bold;
   border-radius: 50px;
   cursor: pointer; }
+
+.card {
+  padding: 1rem; }
 
 /*# sourceMappingURL=stylenuevo.css.map */

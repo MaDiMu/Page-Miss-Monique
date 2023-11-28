@@ -8,6 +8,8 @@
 
 .list{@include flex(null, null, column, 2rem);
         font-size: $font-xsmall;};
+
+.list{@include flex(center,center,column,null)}
 .nav{display: flex;}
 .nav-items{
         font-size: $font-medium;
