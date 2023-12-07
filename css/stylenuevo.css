@@ -18,17 +18,24 @@ a {
 
 .encabezado {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 10px; }
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: row;
+  padding: 10px;
+  width: 100%; }
 
 .encabezado-fluid {
   display: flex;
   justify-content: center;
   align-items: center; }
   .encabezado-fluid-a {
-    display: flex; }
+    display: flex;
+    min-width: 80px;
+    min-height: 50px; }
+
+nav {
+  display: flex; }
 
 .carousele {
   display: flex;
@@ -47,11 +54,22 @@ a {
   align-items: center;
   flex-direction: column; }
 
+.nav1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem; }
+
 .nav {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem; }
 
 .nav-items {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
   border-bottom: 1px solid white;
@@ -70,14 +88,92 @@ a {
   padding: 1rem;
   justify-content: center; }
 
-.music .music-img-1 {
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.back {
+  padding: 32px 0; }
+
+.navb {
+  border: 1px solid red;
+  height: 48px;
+  padding: 10px 12px;
+  position: relative; }
+
+.checkbox, .icons {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px; }
+
+.icons {
+  pointer-events: none;
+  font-size: 24px; }
+
+.checkbox {
+  opacity: 0; }
+
+.fi-sr-cross {
+  display: none; }
+
+.checkbox:checked ~ .fi-rr-menu-burger {
+  display: none; }
+
+.checkbox:checked ~ .fi-sr-cross {
+  display: block; }
+
+.menu {
+  border: 1px solid red;
+  width: 200px;
+  position: absolute;
+  top: 48px;
+  right: 0px;
+  display: none;
+  transition: 250ms; }
+
+.menu li {
+  list-style: none; }
+
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 10px 12px; }
+
+.menu-icono {
+  width: 100px;
+  align-items: center; }
+
+.menu li a:hover {
+  background-color: aqua; }
+
+.checkbox:checked ~ .menu {
+  top: 48px; }
+
+.menu a {
+  height: 48px;
+  padding: 14px 12px 6px; }
+
+.music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center; }
+
+.music-img-1 {
   display: flex;
   align-items: center;
   padding: 1.5rem;
   max-width: 100%;
   text-align: center;
   margin: auto;
-  justify-content: center; }
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  min-width: 300px; }
 
 .music-tittle {
   display: flex;
@@ -94,7 +190,8 @@ a {
   justify-content: center;
   color: grey;
   font-family: 'Rubik', sans-serif;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-align: center; }
 
 .music-img {
   display: flex;
@@ -103,7 +200,12 @@ a {
   max-width: 70%;
   text-align: center;
   margin: auto;
-  justify-content: center; }
+  justify-content: center;
+  min-width: 300px; }
+
+.music-spot {
+  color: #4cf14c;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 ol a {
   color: #e8dddd; }
@@ -159,10 +261,96 @@ ol a {
   .signup-img {
     display: flex;
     align-items: center;
-    padding: 2rem;
-    max-width: 70%;
+    padding: 6rem;
+    max-width: 100%;
     margin: auto;
-    justify-content: center; }
+    justify-content: center;
+    min-width: 450px; }
+
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  box-shadow: 7px 13px 37px #000; }
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px; }
+  .form-register a {
+    color: white;
+    text-decoration: underline; }
+    .form-register a:hover {
+      text-decoration: none; }
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  color: white; }
+
+.form-register .bottom {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px; }
+
+.form-register {
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 4px;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  box-shadow: 7px 13px 37px #000; }
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px; }
+  .form-register a {
+    color: white;
+    text-decoration: underline; }
+    .form-register a:hover {
+      text-decoration: none; }
+  .form-register .controls {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #1f53c5;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    color: white; }
+  .form-register .form-register .bottom {
+    width: 100%;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px; }
+  @media only screen and (max-width: 600px) {
+    .form-register .form-register {
+      width: 90%; } }
 
 footer p {
   text-align: center;
@@ -184,7 +372,9 @@ footer p {
   display: flex;
   align-items: center;
   flex-direction: center;
-  gap: 3rem; }
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center; }
   .redes .instagram {
     padding: 1.5rem;
     color: #E1306C; }
@@ -192,6 +382,7 @@ footer p {
     padding: 1.5rem;
     color: #29ABE2; }
   .redes .soundcloud {
+    padding: 1.5rem;
     color: #FF8800; }
 
 i {
@@ -204,14 +395,16 @@ i {
   max-width: 100%;
   text-align: center;
   margin: auto;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .video-img {
     display: flex;
     align-items: center;
     padding: 2rem;
-    max-width: 70%;
+    max-width: 100%;
     margin: auto;
-    justify-content: center; }
+    justify-content: center;
+    min-width: 250px; }
   .video-p {
     display: flex;
     justify-content: center;
@@ -224,6 +417,7 @@ i {
   font-weight: bold; }
 
 .button-price {
+  text-align: center;
   border: none;
   background-color: black;
   color: #ffffff;
@@ -234,5 +428,11 @@ i {
 
 .card {
   padding: 1rem; }
+
+.card-body {
+  text-align: center; }
+
+.arti {
+  padding-bottom: 1rem; }
 
 /*# sourceMappingURL=stylenuevo.css.map */

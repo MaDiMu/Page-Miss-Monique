@@ -3,6 +3,7 @@
     font-weight: bold;
 };
 .button-price{
+    text-align: center;
     border: none;
     background-color: black;
     color: #ffffff;
@@ -12,3 +13,7 @@
     cursor: pointer;}
 
     .card{padding: 1rem;};
+
+.card-body{text-align: center;}
+
+.arti{padding-bottom: 1rem;}

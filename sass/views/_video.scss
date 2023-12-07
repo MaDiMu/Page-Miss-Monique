@@ -1,5 +1,7 @@
 .video{@include music(center,1.5rem,100%,center,auto,center);
-    &-img{@include music(center,2rem,70%,null,auto,center);}
+    flex-wrap: wrap;
+    &-img{@include music(center,2rem,100%,null,auto,center);
+        min-width: 250px}
     &-p{@include flex(center,center,null,null);
         font-size: 1.5rem;
         font-family: 'Rubik', sans-serif;}}

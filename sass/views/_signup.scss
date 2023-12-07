@@ -1,2 +1,100 @@
 .signup{@include music(center,1.5rem,100%,center,auto,center);
-    &-img{@include music(center,2rem,70%,null,auto,center);}}
+    &-img{@include music(center,6rem,100%,null,auto,center);
+        min-width: 450px;}
+        }
+.form-register{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family:  'Roboto Mono', monospace;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    h4{font-size: 22px;
+        margin-bottom: 20px;}
+    p{height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;}
+    a{color: white;
+        text-decoration: underline;
+        &:hover{text-decoration: none}};
+    }
+
+.controls{width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
+        color: white;}
+
+.form-register .bottom{width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;}
+
+        .form-register {
+            width: 80%; 
+            max-width: 400px; 
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+            border-radius: 4px;
+            font-family: 'Roboto Mono', monospace;
+            color: white;
+            box-shadow: 7px 13px 37px #000;
+          
+            h4 {
+              font-size: 22px;
+              margin-bottom: 20px;
+            }
+          
+            p {
+              height: 40px;
+              text-align: center;
+              font-size: 18px;
+              line-height: 40px;
+            }
+          
+            a {
+              color: white;
+              text-decoration: underline;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          
+            .controls {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 16px;
+              border-radius: 4px;
+              border: 1px solid #1f53c5;
+              font-family: 'Roboto Mono', monospace;
+              font-size: 18px;
+              color: white;
+            }
+          
+            .form-register .bottom {
+              width: 100%;
+              padding: 12px;
+              margin: 16px 0;
+              font-size: 16px;
+            }
+          
+            
+            @media only screen and (max-width: 600px) {
+              .form-register {
+                width: 90%; 
+              }
+            }
+          }
+          

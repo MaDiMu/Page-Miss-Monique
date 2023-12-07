@@ -1,8 +1,13 @@
-.encabezado{@include flex( flex-start, flex-start,column, null);
-        padding: 10px;};
+.encabezado{@include flex( space-between, center,row, row);
+        padding: 10px;
+width: 100%;};
 .encabezado-fluid{@include flex(center,center,null,null);
-    &-a{display: flex;};}
+      
+    &-a{display: flex;
+        min-width: 80px;
+        min-height: 50px};}
 
+nav{display: flex;}
 
 .carousele{@include flex(center, center, null, null)};
 
@@ -10,9 +15,13 @@
         font-size: $font-xsmall;};
 
 .list{@include flex(center,center,column,null)}
-.nav{display: flex;}
+
+.nav1{@include flex(center, center, row, 2rem)
+        }
+
+.nav{ @include flex(center,center,row,2rem)}
 .nav-items{
-        font-size: $font-medium;
+        font-size: $font-small;
         font-family:'Roboto Mono', monospace;
         font-weight: bold;
         border-bottom: 1px solid white;
@@ -29,4 +38,50 @@
 
 
 
+.container{max-width: 1100px;
+        margin:0 auto;}
 
+
+ .back{padding: 32px 0;}       
+
+ .navb{border: 1px solid red;
+        height: 48px;
+        padding: 10px 12px;
+        position: relative;}
+
+.checkbox, .icons{
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+}
+.icons{pointer-events: none;
+        font-size: 24px;}
+.checkbox{opacity: 0;
+}
+.fi-sr-cross{display: none;}
+.checkbox:checked ~ .fi-rr-menu-burger{display: none;}
+.checkbox:checked ~ .fi-sr-cross{display: block;}
+.menu{border: 1px solid red;
+        width: 200px;
+        position: absolute;
+        top: 48px;
+        right: 0px;
+        display: none;
+        transition: 250ms;
+        ;}
+
+.menu li{list-style: none;}
+.menu li a{text-decoration: none;
+                color: inherit;
+                display: block;
+                padding: 10px 12px;}
+.menu-icono{width: 100px;
+        align-items: center;}
+.menu li a:hover{background-color: aqua;}
+.checkbox:checked ~ .menu{top: 48px;}
+
+.menu a{height: 48px;
+        padding: 14px 12px 6px;}
