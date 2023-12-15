@@ -42,9 +42,10 @@ nav{display: flex;}
         margin:0 auto;}
 
 
- .back{padding: 32px 0;}       
+ .back{padding: 32px 0;
+        background-color: #009d71;}       
 
- .navb{border: 1px solid red;
+ .navb{
         height: 48px;
         padding: 10px 12px;
         position: relative;}
@@ -64,24 +65,46 @@ nav{display: flex;}
 .fi-sr-cross{display: none;}
 .checkbox:checked ~ .fi-rr-menu-burger{display: none;}
 .checkbox:checked ~ .fi-sr-cross{display: block;}
-.menu{border: 1px solid red;
-        width: 200px;
+.menu{
         position: absolute;
         top: 48px;
         right: 0px;
         display: none;
         transition: 250ms;
-        ;}
+        z-index: 1;
+        background-color: #009d71;
+        padding: 0;
+        margin: 0;}
 
-.menu li{list-style: none;}
-.menu li a{text-decoration: none;
+.menu{ li{list-style: none;}}
+.menu {li{ a{text-decoration: none;
                 color: inherit;
                 display: block;
-                padding: 10px 12px;}
+                padding: 10px 12px;
+                justify-content: center;}}}
 .menu-icono{width: 100px;
-        align-items: center;}
-.menu li a:hover{background-color: aqua;}
-.checkbox:checked ~ .menu{top: 48px;}
+        align-items: center;
+        position: relative;
+        top: -36px;}
+.menu li a:hover{background-color: #026842;}
+.checkbox:checked ~ .menu{top: 48px;
+                        display: block;}
 
-.menu a{height: 48px;
-        padding: 14px 12px 6px;}
+.menu{ a{height: 48px;
+        padding: 14px 12px 6px;}}
+@media screen and (min-width:730px){
+        .checkbox, .fi-rr-menu-burger, .fi-sr-cross{
+                display: none;
+        }
+        .menu{display: block;
+                width: unset;
+                top: -20px;
+        display: flex;
+        li{
+                a{
+                        height: 48px;
+                        padding: 40px
+                };
+        };}
+        
+}

@@ -93,10 +93,10 @@ nav {
   margin: 0 auto; }
 
 .back {
-  padding: 32px 0; }
+  padding: 32px 0;
+  background-color: #009d71; }
 
 .navb {
-  border: 1px solid red;
   height: 48px;
   padding: 10px 12px;
   position: relative; }
@@ -126,13 +126,15 @@ nav {
   display: block; }
 
 .menu {
-  border: 1px solid red;
-  width: 200px;
   position: absolute;
   top: 48px;
   right: 0px;
   display: none;
-  transition: 250ms; }
+  transition: 250ms;
+  z-index: 1;
+  background-color: #009d71;
+  padding: 0;
+  margin: 0; }
 
 .menu li {
   list-style: none; }
@@ -141,22 +143,38 @@ nav {
   text-decoration: none;
   color: inherit;
   display: block;
-  padding: 10px 12px; }
+  padding: 10px 12px;
+  justify-content: center; }
 
 .menu-icono {
   width: 100px;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  top: -36px; }
 
 .menu li a:hover {
-  background-color: aqua; }
+  background-color: #026842; }
 
 .checkbox:checked ~ .menu {
-  top: 48px; }
+  top: 48px;
+  display: block; }
 
 .menu a {
   height: 48px;
   padding: 14px 12px 6px; }
 
+@media screen and (min-width: 730px) {
+  .checkbox, .fi-rr-menu-burger, .fi-sr-cross {
+    display: none; }
+
+  .menu {
+    display: block;
+    width: unset;
+    top: -20px;
+    display: flex; }
+    .menu li a {
+      height: 48px;
+      padding: 40px; } }
 .music {
   display: flex;
   justify-content: center;
@@ -268,8 +286,8 @@ ol a {
     min-width: 450px; }
 
 .form-register {
+  background: #0c4128;
   width: 400px;
-  background: #24303c;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -293,21 +311,21 @@ ol a {
 
 .controls {
   width: 100%;
-  background: #24303c;
+  background: #1d7750;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid #41966d;
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
-  color: white; }
+  color: black; }
 
 .form-register .bottom {
   width: 100%;
-  background: #1f53c5;
+  background: #98ffe0;
   border: none;
   padding: 12px;
-  color: white;
+  color: black;
   margin: 16px 0;
   font-size: 16px; }
 
@@ -339,7 +357,7 @@ ol a {
     padding: 10px;
     margin-bottom: 16px;
     border-radius: 4px;
-    border: 1px solid #1f53c5;
+    border: 1px solid #41966d;
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     color: white; }
